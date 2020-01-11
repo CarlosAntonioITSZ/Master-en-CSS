@@ -1,0 +1,331 @@
+/* FUENTES */
+@font-face{
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+        url("fonts/nevis.woff") format("woff"),
+        url("fonts/nevis.ttf") format("truetype"),
+        url("fonts/nevis.svg") format("svg");
+
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")format('svg'),
+         url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/websymbols-regular-webfont.woff") format("woff"),
+         url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+body{
+    background-image: url("../img/paven.png");
+}
+/* CABECERA*/
+#header{
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+#header #logotipo{
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+#header #logotipo img{
+    display: block;
+    width: 140px;
+    text-align: center;
+    margin: 0px auto;
+}
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "nevis";
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+}
+#header h1:hover{
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70B231;
+}
+#header h1 a{
+    color: #70B231;
+}
+/* .................... */
+
+/* NAVEGACION */
+
+
+#barraNav{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(59,59,59);
+    position: absolute;
+    z-index: 1;
+}
+#lista{
+    width: 1050px;
+    margin: 0px auto;
+}
+#barraNav > #lista > .elementos{
+    list-style: none;
+    float: left;
+    border-right:1px solid gray ;
+}
+#barraNav > #lista > .elementos a{
+    line-height: 40px;
+    display: block;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 40px;
+}
+/*SUB LISTA*/
+#barraNav> #lista > .elementos > .subLista{
+    background-color: rgb(59,59,59);
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+#barraNav> #lista > .elementos > .subLista > .subElementos{
+    border: 1px solid gray;
+}
+
+#barraNav> #lista > .elementos:hover > .subLista{
+    display: block;
+}
+/*..............*/
+
+
+#barraNav > #lista > .elementos a:first-child{
+    border-left: 1px solid gray ;
+}
+#barraNav > #lista > .elementos a:hover{
+    background-color:#70b231;
+    box-shadow: 0px 0px 4px green inset;
+    transition: all 300ms;
+}
+
+
+/* .................... */
+
+
+/* BARRA LATERAL*/
+
+#contenido{
+    width: 1250px;
+    min-height: 1300px;
+    margin:50px auto;
+
+}
+
+
+#aside, #frase{
+    float: left;
+    width: 200px;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 2px 2px #cccccc;
+    font-family: sans-serif;
+}
+
+#aside .Divs{
+    display: block;
+    widows: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px ;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#aside .Divs h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #f2f3f2;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-right: none;
+}
+
+
+.blue{
+    color: #0c73f2 !important;
+}
+.red{
+    color: #9b2422 !important;
+}
+
+input[type="text"], input[type="password"]{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #cccccc inset;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    display: block;
+    margin: 0px auto;
+}
+input[type="text"]:focus, input[type="password"]:focus{
+    color: black;
+    
+}
+label{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+label:first-child{
+    margin-top: 20px;
+}
+
+
+input[type="submit"]{
+    display: block;
+    border: none;
+    margin: 4px auto;
+    margin-bottom: 7px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 60px;
+    background-color:#70b231;
+    border: 1px solid green;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+input[type="submit"]:active{
+    box-shadow: 0px 0px 3px gray inset ;
+    text-shadow: 0px 0px 3px #cccccc;
+}
+
+#primer a, #tercero a, #cuarto a, #verMas a, #contacto{
+    color:#529105;
+    display: block;
+}
+#primer a:hover, #tercero a:hover, #cuarto a:hover, #secciones a:hover, #verMas a:hover, #contacto:hover{
+    color:#3e6d04;
+}
+
+#cuarto{
+    margin-bottom: 100px;
+}
+
+#cuarto li{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 8px;
+    list-style: square;
+}
+#aside .Divs:last-child{
+    margin-bottom: 20px;
+}
+#frase h3{
+    text-align: center;
+    margin: 13px;
+}
+#frase p{
+    margin: 9px;
+}
+
+
+/*CONTENIDO PRINCIPAL*/
+#secciones{
+    float: right;
+    width: 75%;
+}
+#secciones:last-child{
+    margin-bottom: 40px;
+}
+
+.titulos{
+    font-size: 25;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+#secciones a{
+    color: #529105;
+}
+
+#secciones section{
+    background-color: white;
+    margin-top: 27px;
+    padding: 20px;
+    border: 1px solid #c9c9c9c9;
+    box-shadow: 0px 0px 4px #c9c9c9;    
+    font-size: 19px;
+}
+
+#secciones .articulos{
+    padding: 15px;
+}
+
+#secciones .date{
+    color: gray;
+    font-size: 15px;
+}
+
+#secciones .sticker .stickerOne{
+    position: absolute;
+    margin-top: -40px;
+}
+#secciones .sticker .stickerTwo{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 857px;
+}
+
+.icon{
+        
+    font-family: "icons";
+    float: left;
+    margin-right: 3px;
+    margin-top: -2px;
+
+}
+
+/* FOOTER*/
+
+#verMas{
+    clear: both;
+    float: right;
+    margin: 34px;
+    font-family: sans-serif;
+
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    background-color:rgb(59,59,59);
+    height: 60px;
+    color:white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: Helvetica;
+    box-shadow: 0px 0px 7px gray;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Master en CSS</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+    <!--CABECERA-->
+    <header id="header">
+        <div id="logotipo">
+            <img src="img/logo.png" alt="Logo de la pagina" />
+        </div>
+        <h1>
+            <a href="#" target="black"> MASTER EN CSS </a>
+        </h1>
+    </header>
+    <!-- ........ -->
+
+    <!--NAVEGACION-->
+    <nav id="barraNav">
+
+        <ul id="lista">
+
+            <li class="elementos">
+                <a href="#"> Inicio</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Contenido</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Requerimientos</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Lenguajes</a>
+                <ul class="subLista">
+                    <li class="subElementos">
+                        <a href="#">Java</a>
+                    </li>
+                    <li class="subElementos">
+                        <a href="#">Python</a>
+                    </li>
+                    <li class="subElementos">
+                        <a href="#">PHP</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Frameworks</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Proyectos</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Instructor</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Reseñas</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Blog</a>
+            </li>
+
+            <li class="elementos">
+                <a href="#"> Contacto</a>
+                <ul class="subLista">
+                    <li class="subElementos">
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li class="subElementos">
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li class="subElementos">
+                        <a href="#">Whatsapp</a>
+                    </li>
+                </ul>
+                </li">
+        </ul>
+
+        <div class="clearFix"></div>
+    </nav>
+    <!-- ........ -->
+    <!--INICIO DEL CONTENIDO CENTRAL-->
+    <div id="contenido">
+        <aside id="aside">
+            <!--Barra lateral-->
+            <div class="Divs" id="primer">
+                <h3>
+                    Entrar a la web
+                </h3>
+                <form id="formulario">
+                    <label>Usuario:</label>
+                    <input type="text" />
+                    <label>Contraseña:</label>
+                    <input type="password" />
+                    <input type="submit" value="Entrar">
+                </form>
+                <a href="#">Zona de alumnos</a>
+                <a href="#">Zona de profesor</a>
+                <a href="#">Acceso a calificaciones</a>
+            </div>
+
+            <div class="Divs" id="segundo">
+                <h3 class="blue"> Aula virtual 1</h3>
+                <form="formulario">
+                    <label>Usuario:</label>
+                    <input type="text" />
+                    <label>Contraseña:</label>
+                    <input type="password" />
+                    <input type="submit" value="Entrar">
+                    </form>
+            </div>
+
+            <div class="Divs" id="tercero">
+                <h3 class="red"> Aula virtual 2</h3>
+                <form="formulario">
+                    <label>Usuario:</label>
+                    <input type="text" />
+                    <label>Contraseña:</label>
+                    <input type="password" />
+                    <input type="submit" value="Entrar">
+                    </form>
+            </div>
+
+            <div class="Divs" id="cuarto">
+                <h3>Enlaces de interes</h3>
+                <ul>
+                    <li>
+                        <a href="#">Master en PHP</a>
+                    </li>
+                    <li>
+                        <a href="#">Curso de Python</a>
+                    </li>
+                    <li>
+                        <a href="#">Comandos basicos de git</a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- ........ -->
+
+        <!-- SECCIONES-->
+        <div id="secciones">
+            <section id="front">
+                <span class="sticker">
+                    <img class="stickerOne" src="img/scotch.png" />
+                    <img class="stickerTwo" src="img/scotch.png" />
+                </span>
+                <h2 class="titulos">Noticias de front-end</h2>
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"">Titulo de la entrada</a>
+                    Aquí vemos los lenguajes que se usan en el desarrollo profesional.
+
+                    HTML
+                    HyperText Markup Language, es un lenguaje de marcado, que funciona a base de etiquetas para la
+                    estructuración y organización del contenidos de la web.
+
+                    CSS
+                    cascading style sheets, son hojas de estilos en cascada, encargada de dar formato al contenido.
+
+                    Javascript
+                    lenguaje de programación muy potente, orientado a objeto y desde hace muchos años usado para el
+                    desarrollo de aplicaciones web y hoy día y cara al futuro de los lenguajes que más se están
+                    extendiendo y evolucionando en el ámbito del desarrollo web y de desarrollo móvil. con la cualidad
+                    de poder ser interpretado en equipo cliente y en cualquier navegador web e interactuar fácilmente
+                    con HTML y CSS entre otros.
+                    </p>
+                    <span class=" date">[10-01-2020. Carlos Antonio]</span>
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"">Titulo de la entrada</a>
+                    El desarrollo de proyectos para un frontend, en la mayoría de ocasiones van a ir muy de la mano del diseño, esto quiere decir que no está de más ampliar conocimientos de teórica de diseño y controlar aplicaciones como illustrator, photoshop entre otros, para la manipulación, retocado de imágenes, diseños vectoriales, ilustraciones etc…
+                    También ayuda mucho, el controlar y dominar programaciones de lado servidor tales como PHP y Python entre varios.
+                    
+                    Ten en cuenta que en este trabajo se trabaja muy de la mano con este tipo de tecnologías y todo conocimiento es muy bien recibido a la hora de poder desarrollar proyectos de gran envergadura y no depender tanto del equipo de expertos en programación (desarrolladores backend).
+                    </p>
+                    <span class=" date">[10-01-2020. Lupita Prado]</span>
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"">Titulo de la entrada</a>
+                        «Front-end», conocido al español y latino como «frontend» y en su traducción algo así como frente o fachada final. Es una especialidad para el desarrollo web, que trabaja la interfaz web y hace que el usuario pueda interactuar con nuestra web.
+                        Está orientado a lenguaje de marcas y al lenguaje de programación web de ejecución en equipos clientes, sin necesidad de uso de servidores externos. Casi todo lo que ves en la pantalla cuando accedes a una web es desarrollo frontend, la estructuración de los apartados, tamaños, márgenes entre estructuras, tipos de letra, colores, adaptación para distintas pantallas, los efectos de ratón, teclado, movimientos, desplazamientos, efectos visuales…Esto sería la base origen en la que se centra la especialidad frontend, dar formato a contenidos, desarrollo del aspecto de la web y manipular resultados de datos obtenidos.
+                    </p>
+                    <span class=" date">[10-01-2020. Isamar Roman]</span>
+                </article>
+            </section>
+
+            <!--.......................................-->
+            <section id="back">
+                <span class="sticker">
+                    <img class="stickerOne" src="img/scotch.png" />
+                    <img class="stickerTwo" src="img/scotch.png" />
+                </span>
+                <h2 class="titulos red">Noticias de back-end</h2>
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"">Titulo de la entrada</a>
+                    Aquí vemos los lenguajes que se usan en el desarrollo profesional.
+
+                    HTML
+                    HyperText Markup Language, es un lenguaje de marcado, que funciona a base de etiquetas para la
+                    estructuración y organización del contenidos de la web.
+
+                    CSS
+                    cascading style sheets, son hojas de estilos en cascada, encargada de dar formato al contenido.
+
+                    Javascript
+                    lenguaje de programación muy potente, orientado a objeto y desde hace muchos años usado para el
+                    desarrollo de aplicaciones web y hoy día y cara al futuro de los lenguajes que más se están
+                    extendiendo y evolucionando en el ámbito del desarrollo web y de desarrollo móvil. con la cualidad
+                    de poder ser interpretado en equipo cliente y en cualquier navegador web e interactuar fácilmente
+                    con HTML y CSS entre otros.
+                    </p>
+                    <span class=" date">[10-01-2020. Carlos Antonio]</span>
+
+
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"">Titulo de la entrada</a>
+                    El desarrollo de proyectos para un frontend, en la mayoría de ocasiones van a ir muy de la mano del diseño, esto quiere decir que no está de más ampliar conocimientos de teórica de diseño y controlar aplicaciones como illustrator, photoshop entre otros, para la manipulación, retocado de imágenes, diseños vectoriales, ilustraciones etc…
+                    También ayuda mucho, el controlar y dominar programaciones de lado servidor tales como PHP y Python entre varios.
+                    
+                    Ten en cuenta que en este trabajo se trabaja muy de la mano con este tipo de tecnologías y todo conocimiento es muy bien recibido a la hora de poder desarrollar proyectos de gran envergadura y no depender tanto del equipo de expertos en programación (desarrolladores backend).
+                    </p>
+                    <span class=" date">[10-01-2020. Lupita Prado]</span>
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"">Titulo de la entrada</a>
+                        «Front-end», conocido al español y latino como «frontend» y en su traducción algo así como frente o fachada final. Es una especialidad para el desarrollo web, que trabaja la interfaz web y hace que el usuario pueda interactuar con nuestra web.
+                        Está orientado a lenguaje de marcas y al lenguaje de programación web de ejecución en equipos clientes, sin necesidad de uso de servidores externos. Casi todo lo que ves en la pantalla cuando accedes a una web es desarrollo frontend, la estructuración de los apartados, tamaños, márgenes entre estructuras, tipos de letra, colores, adaptación para distintas pantallas, los efectos de ratón, teclado, movimientos, desplazamientos, efectos visuales…Esto sería la base origen en la que se centra la especialidad frontend, dar formato a contenidos, desarrollo del aspecto de la web y manipular resultados de datos obtenidos.
+                    </p>
+                    <span class=" date">[10-01-2020. Isamar Roman]</span>
+                </article>
+
+                <article class="articulos">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"">Titulo de la entrada</a>
+                        A groso modo y como básico sin adulterar la especialidad, desarrollaría proyectos dando formato y diseño a los contenidos, mediante los lenguajes HTML, CSS y Javascript, anteriormente descritos. Muy importante remarcar la creación de interfaces con propiedades de movimiento o manipulación de estructuras, todo enfocado a facilitarle la navegación al usuario visitante.
+
+                        Así que si necesitas dar a tu web una imagen profesional, innovadora y optimizada, el desarrollador frontend sería el profesional más recomendado para este trabajo ya que se dedica exclusivamente a esto.
+                        
+                        con esto ya tenéis una ligera pincelada, ya que podíamos extendernos muchísimo más en el tema, pero esto sólo es una rápida introducción para que conozcáis un poquito más sobre esta especialidad y sus puntos básicos para entender a que se dedica un desarrollador frontend y lo necesario para poder empezar a conocer que herramientas necesita para su trabajo.
+                    </p>
+                    <span class=" date">[10-01-2020. Julio Profe]</span>
+                </article>
+            </section>
+            <!--.......................................-->
+            <section id="instructor">
+                <span class="sticker">
+                    <img class="stickerOne" src="img/scotch.png" />
+                    <img class="stickerTwo" src="img/scotch.png" />
+                    <span>
+                        <h2 class="titulos blue">Noticias del instructor
+                        </h2>
+                        <article class="articulos">
+                            <span class="icon">a</span>
+                            <p>
+                                <a href="#"">Titulo de la entrada</a>
+                    Aquí vemos los lenguajes que se usan en el desarrollo profesional.
+
+                    HTML
+                    HyperText Markup Language, es un lenguaje de marcado, que funciona a base de etiquetas para la
+                    estructuración y organización del contenidos de la web.
+
+                    CSS
+                    cascading style sheets, son hojas de estilos en cascada, encargada de dar formato al contenido.
+
+                    Javascript
+                    lenguaje de programación muy potente, orientado a objeto y desde hace muchos años usado para el
+                    desarrollo de aplicaciones web y hoy día y cara al futuro de los lenguajes que más se están
+                    extendiendo y evolucionando en el ámbito del desarrollo web y de desarrollo móvil. con la cualidad
+                    de poder ser interpretado en equipo cliente y en cualquier navegador web e interactuar fácilmente
+                    con HTML y CSS entre otros.
+                    </p>
+                    <span class=" date">[10-01-2020. Carlos Antonio]
+                    </span>
+                    </article>
+                    <article class="articulos">
+                        <span class="icon">a</span>
+                        <p>
+                            <a href="#"">Titulo de la entrada</a>
+                    El desarrollo de proyectos para un frontend, en la mayoría de ocasiones van a ir muy de la mano del diseño, esto quiere decir que no está de más ampliar conocimientos de teórica de diseño y controlar aplicaciones como illustrator, photoshop entre otros, para la manipulación, retocado de imágenes, diseños vectoriales, ilustraciones etc…
+                    También ayuda mucho, el controlar y dominar programaciones de lado servidor tales como PHP y Python entre varios.
+                    
+                    Ten en cuenta que en este trabajo se trabaja muy de la mano con este tipo de tecnologías y todo conocimiento es muy bien recibido a la hora de poder desarrollar proyectos de gran envergadura y no depender tanto del equipo de expertos en programación (desarrolladores backend).
+                    </p>
+                    <span class=" date">[10-01-2020. Lupita Prado]
+                </span>
+                </article>
+            </section>
+
+        </div>
+
+        <aside id="frase">
+            <h3>Frase del dia</h3>
+            <p>
+                Esta frase plasma a la perfección el amor que se puede sentir por otra persona, ya sea en una
+                relación
+                de pareja como por familiares o amistades especiales. Además, es perfecta para buscar positivismo y
+                animar a alguien que lo necesite y hacerle ver que sí es importante. Si buscas algo de este estilo,
+                te
+                recomendamos estas otras
+            </p>
+        </aside>
+    </div>
+    <!-- ........ -->
+
+    <div id="verMas">
+        <a href="#">[Ver historico de noticias]</a>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <p> &copy; Desarrollado por Carlos Antonio</p>
+        <p>Mas contenido y formacion de desarrollo web en <a id="contacto" href="#"> facebook.com/CarlosAntonio</a></p>
+    </footer>
+</body>
+
+</html>
