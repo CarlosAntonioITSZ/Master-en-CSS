@@ -77,25 +77,99 @@ INICIO ESTILOS CABECERA
     letter-spacing: 1px;
     cursor:pointer;
     overflow: hidden;
-    transition: all 300ms;
     margin-top: 8px;
     margin-left: 20px;
+    
+
 }
+
+#logo:hover{
+    color: black;
+    background-color: white;;
+}
+
 #logo h3{
     display: block;
     float: right;
     font-size: 40px;
     margin-top: 5px;
-    transition: all 300ms;
     margin-right: 65px;
 }
 
 #logo #gear{
     display: block;
     margin-top: 8px;
-    margin-left: 26px;;
+    margin-left: 26px;
     float:left;
     font-size: 30px;
+
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#logo:hover #gear{
+    animation: translateGear 500ms linear;
+    -webkit-animation: translateGear 500ms linear;
+}
+#logo:hover h3{
+    animation: translateH3 500ms linear;
+    -webkit-animation: translateH3 500ms linear;
+}
+
+
+@keyframes translateH3{
+    0%{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }50%{
+        transform: translateX(200%);
+        -webkit-transform: translateX(200%);
+        -moz-transform: translateX(200%);
+        -ms-transform: translateX(200%);
+        -o-transform: translateX(200%);
+    }100%{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+}
+}
+
+@keyframes translateGear{
+    0%{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }50%{
+        transform: translateY(200%);
+        -webkit-transform: translateY(200%);
+        -moz-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        -o-transform: translateY(200%);
+}100%{
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+}
+}
+/**ANIMACION**/
+@keyframes rotate-gear{
+    from{
+        transform: rotateZ(0deg);
+}
+    to{
+        transform: rotateZ(360deg);
+}
 }
 
 #nav{
