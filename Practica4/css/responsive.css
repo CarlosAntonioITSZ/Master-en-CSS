@@ -1,0 +1,161 @@
+@media(max-width:1250px){
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    #cards{
+        display: block;
+        width: 100%;
+        margin: 0px auto ;
+    }
+
+    .card{
+        width: 100%;
+
+        width: 17%;
+        margin-left: 1.8%;
+        height: 320px;
+        margin: 13px;
+    }
+
+    .card h2{
+        margin: 0px auto;
+        width: 85%;
+        font-size: 20px;
+    }
+    .card .description{
+        margin: 0px auto;
+        width: 85%;
+        font-size: 16px;
+    }
+
+
+    #blog{
+        margin-bottom: 90px;
+    }
+
+    #articles{
+        width: 66%;
+    }
+    #info #optimizado img{
+    width: 40px;
+    }
+
+    #side{
+        width: 28%;
+    }
+    #side #login, #social, #sponsors{
+        height: 251px;
+    }
+
+    #login input[type="email"], #login input[type="password"]{
+        width: 70%;
+    }
+    #user,#password{
+        padding-left:1px;
+    }
+
+    #login input[type="button"], #login input[type="reset"] {
+     width: 39%;
+    }
+    #login #buttons{
+        margin-left: 0px;
+    }
+
+    #login a{
+        margin-left: 10px;
+    }
+
+    footer div > div{
+        margin-left: 80px;
+    }
+}
+
+
+
+@media(max-width:1080px){
+    .card{
+        width: 17%;
+        margin-left: 10px;
+        height: 320px;
+    }
+
+    .card .description{
+        font-size: 14px;
+    }
+    #side{
+        width: 25%;
+    }
+
+    #side #search input[type="text"]{
+        width: 79%;
+    }
+
+    #login input[type="button"], #login input[type="reset"] {
+        display: block;
+        margin:0px auto;
+        margin-top:15px;
+    }
+    #login input[type="button"]{
+        margin-top: 23px;
+    }
+    #side #login{
+        height: 304px;
+    }
+    #side #social{
+        height: 230px;
+    }
+}
+
+@media(max-width:982px){
+    #side #search input[type="text"]{
+        width: 75%;
+    }
+
+    footer h5{
+        font-size: 29px;
+        height: 41px;
+        line-height: 41px;
+    }
+    #info #optimizado img{
+        width: 33px;
+    }
+    #banner h1{
+        font-size: 38px;
+        width: 85%;
+        height: 20px;
+        height: 50%;
+        line-height: 60px;
+    }
+    
+}
+
+@media(max-width:961px){
+    .card{
+        height: 221px;
+    }
+    .card .description{
+        opacity: 0;
+    }
+    #banner h1{
+        display: block;
+        font-size: 38px;
+        width: 53%;
+        overflow: hidden;
+        height: 45%;
+    }
+    #side{
+        position: absolute;
+        width: 90%;
+        margin-top: 126%;
+        margin-right: 30%;
+    }
+    footer{
+        position: absolute;
+        margin-top: 2626px;
+    }
+    #articles{
+        width: 99%;
+    }
+}
